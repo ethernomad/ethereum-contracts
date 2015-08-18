@@ -96,7 +96,7 @@ contract VersionedBlob {
   function checkOutTag(string tag) constant returns (bytes) {
     int i = findTag(tag);
     if (i != -1) {
-     return commits[tags[uint(i)].commitId].blob;
+      return commits[tags[uint(i)].commitId].blob;
     }
   }
 
